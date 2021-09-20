@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de tempo</title>
+</head>
+<body>
+    <form action="calcular.php" method="POST">
+        <p>
+            Insira o tempo em segundos:<input type="number" placeholder="Numero em segundos" name="num"/>
+        </p>
+        <p>
+            <h2>
+                Insira a conversão que lhe convém:
+            </h2>
+            <input type="radio" name="operacao" id="minutos" value="minutos"/>  Minutos
+            <input type="radio" name="operacao" id="horas" value="horas"/>  Horas
+            <input type="radio" name="operacao" id="dias" value="dias"/>  Dias
+            <input type="radio" name="operacao" id="semanas" value="semanas"/>  Semanas
+        </p>
+        <input type='submit' value='Calcular'/>
+    </form>
+</body>
+</html>
